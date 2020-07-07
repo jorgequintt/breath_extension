@@ -1,0 +1,24 @@
+.urls-holder {
+   height: 81px;
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   flex-direction: column;
+   padding: 13px 15px;
+}
+
+.urls-holder a {
+   color: #868686;
+   font-weight: 200;
+   text-decoration: none;
+   margin: 5px 0px;
+   font-size: 17px;
+   font-family: sans-serif;
+   /* font-weight: bold; */
+   transition: color 0.15s ease;
+}
+
+.urls-holder a:hover {
+   color: #53b0ff;
+}

@@ -1,0 +1,214 @@
+body {
+   background: #F9F9F9;
+}
+
+.text-container {
+   height: 94vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.text-container h1 {
+   color: rgb(155, 155, 155);
+   font-size: 34px;
+   font-weight: normal;
+}
+
+.text-container__box {
+   border: 0px solid #000000;
+   display: flex;
+   width: 365px;
+   height: 365px;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   z-index: 999;
+}
+
+/* //////////////////////////// */
+
+/* TRIANGLE */
+
+/* //////////////////////////// */
+
+.triangle-holder {
+   position: absolute;
+   top: -50px;
+   left: 0;
+   overflow: visible;
+}
+
+.triangle {
+   stroke-dasharray: 816.164794921875 816.164794921875;
+   stroke-dashoffset: 816.164794921875;
+   stroke: #2b9af9;
+   stroke-width: 5;
+   stroke-linejoin: round;
+}
+
+.triangle-background {
+   stroke: #FFFFFF;
+   stroke-width: 6;
+   stroke-linejoin: round;
+}
+
+.triangle-4, .triangle-5, .triangle-6 {
+   stroke-linejoin: round;
+   stroke: #FFFFFF;
+}
+
+/* //////////////////////////// */
+
+/* SQUARE */
+
+/* //////////////////////////// */
+
+.text-container__overlay {
+   position: absolute;
+   width: 365px;
+   height: 365px;
+}
+
+.square-holder {
+   background: #FFFFFF;
+   z-index: -14;
+   width: 100%;
+   height: 100%;
+}
+
+.square {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   box-sizing: border-box;
+}
+
+.square.square-1 {
+   border-top: 5px solid #2b9af9;
+   width: 0%;
+}
+/* SQUARE KEYFRAMES */
+/* SQUARE KEYFRAMES */
+/* SQUARE KEYFRAMES */
+
+@keyframes square-1-step-1 {
+   from {
+      left: 0%;
+      width: 0%;
+   }
+   to {
+      left: 0%;
+      width: 100%;
+   }
+}
+
+@keyframes square-1-step-2 {
+   from {
+      left: 0%;
+      width: 100%;
+   }
+   to {
+      left: 100%;
+      width: 0%;
+   }
+}
+
+@keyframes square-2-step-1 {
+   from {
+      top: 0%;
+      height: 0%;
+   }
+   to {
+      top: 0%;
+      height: 100%;
+   }
+}
+
+@keyframes square-2-step-2 {
+   from {
+      top: 0%;
+      height: 100%;
+   }
+   to {
+      top: 100%;
+      height: 0%;
+   }
+}
+
+@keyframes square-3-step-1 {
+   from {
+      left: 100%;
+      width: 0%;
+   }
+   to {
+      left: 0%;
+      width: 100%;
+   }
+}
+
+@keyframes square-3-step-2 {
+   from {
+      left: 0%;
+      width: 100%;
+   }
+   to {
+      left: 0%;
+      width: 0%;
+   }
+}
+
+@keyframes square-4-step-1 {
+   from {
+      top: 100%;
+      height: 0%;
+   }
+   to {
+      top: 0%;
+      height: 100%;
+   }
+}
+
+@keyframes square-4-step-2 {
+   from {
+      top: 0%;
+      height: 100%;
+   }
+   to {
+      top: 0%;
+      height: 0%;
+   }
+}
+
+/* ////////////// */
+/* ////////////// */
+/* ////////////// */
+
+.square.square-2 {
+   border-right: 5px solid #2b9af9;
+   height: 0%;
+}
+
+.square.square-3 {
+   border-bottom: 5px solid #2b9af9;
+   width: 0%;
+}
+
+.square.square-4 {
+   border-left: 5px solid #2b9af9;
+   height: 0%;
+}
+
+/* animations */
+
+@keyframes square-top-in {
+   from {
+      width: 0%;
+   }
+   to {
+      width: 100%;
+   }
+}
